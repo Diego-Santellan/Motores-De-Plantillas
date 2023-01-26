@@ -1,0 +1,26 @@
+<%- include('../partials/encabezado') %> 
+<body>
+    <div class="container mt-5 rounded border border-dark p-4" style="background-color: #F2E9E4;">
+        <div class="jumbotron " >
+            <h1 style="color: #025159;">Ingrese datos</h1>
+            <br>
+            <form action="/productos" method="post">
+                <div class="form-group">
+                    <label for="nombreProducto"><b>Producto</b></label>
+                    <input id="nombreProducto" class="form-control" type="text" name="nombreProducto">
+                </div>
+                <div class="form-group">
+                    <label for="precio"><b>Precio</b></label>
+                    <input id="precio" class="form-control" type="text" name="precio">
+                </div>
+                <div class="form-group">
+                    <label for="imagen"><b>Imagen</b></label>
+                    <input id="imagen" class="form-control" type="text" name="imagen">
+                </div>
+                <button style="background-color: #025159;" class="btn btn-outline-light mt-3 mb-5">Enviar</button>
+            </form>
+            <h2 style="color: #025159;"> Vista de productos</h2> 
+            <%- include('../partials/tabla') %> 
+        </div>
+    </div>
+</body>
